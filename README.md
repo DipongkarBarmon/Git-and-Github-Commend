@@ -85,13 +85,13 @@ we can recover the file using git checkout command
 
 git checkout -- <file_name> = recover the file from the staging area
 
-git checkout -- . = recover all the file from the staging area
+****git checkout -- . = recover all the file from the staging area
  
-git checkout -f = recover all the file from the staging area and working directory
+<!-- git checkout -f = recover all the file from the staging area and working directory
 
 git checkout -f <file_name> = recover the file from the staging area and working directory
 
-git checkout -f . = recover all the file from the staging area and working directory 
+git checkout -f . = recover all the file from the staging area and working directory  -->
 
 # or 
 # restore command 
@@ -99,7 +99,7 @@ git restore = recover the file from the staging area
 
 git restore <file_name> = recover the file from the staging area
 
-git restore . = recover all the file from the staging area
+****git restore . = recover all the file from the staging area
 
 
 

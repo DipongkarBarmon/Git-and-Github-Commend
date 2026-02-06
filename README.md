@@ -29,15 +29,18 @@ to convert file system to version control system we need to initialize the git r
 
 # Command of Git
 
-git init = initialize empty the git repository 
+***git status = check the status of the file . we can use any time after git init
 
-git status = check the status of the file
+
+****git init = initialize empty the git repository 
+
+ 
 
 # git add command : to add the file to the staging area that means untracked to tracked file
 
 git add <file_name> = add the file to the staging area
 
-git add . = add all the file to the staging area
+****git add . = add all the file to the staging area
 
 git add -A = add all the file to the staging area
 
@@ -59,11 +62,47 @@ git rm --cached . = remove all the file from the staging area but not from the w
 
 git rm --cached -r <folder_name> = remove the folder from the staging area but not from the working directory
 
-git rm --cached -r . = remove all the folder from the staging area but not from the working directory
+*****git rm --cached -r . = remove all the folder from the staging area but not from the working directory
 
 
+# git commit command : to commit the file to the local repository that means tracked to committed file
 
 git commit = commit the file to the local repository
+
+****git commit -m "message" = commit the file to the local repository with message
+
+# recovery of delete file
+
+
+rm <file_name> -> delete the file from the working directory
+
+git rm <file_name> -> delete the file from the staging area and working directory it delete file permanently 
+
+
+these file are not delete from version control system 
+
+we can recover the file using git checkout command
+
+git checkout -- <file_name> = recover the file from the staging area
+
+git checkout -- . = recover all the file from the staging area
+ 
+git checkout -f = recover all the file from the staging area and working directory
+
+git checkout -f <file_name> = recover the file from the staging area and working directory
+
+git checkout -f . = recover all the file from the staging area and working directory 
+
+# or 
+# restore command 
+git restore = recover the file from the staging area
+
+git restore <file_name> = recover the file from the staging area
+
+git restore . = recover all the file from the staging area
+
+
+
 
 git log = check the history of the commit
 

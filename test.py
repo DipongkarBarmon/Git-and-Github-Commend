@@ -1,1 +1,0 @@
-print("Enter the number of rows: ")

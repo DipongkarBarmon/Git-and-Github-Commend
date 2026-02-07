@@ -261,3 +261,30 @@ to show .git inside the folder in vs code
 
 we need to go to settings and search user.exclude for **/.git and check files:exclude then click on add pattern and add **/.git and click on save
 click x to remove the pattern
+
+
+
+# In python
+pipx install flake8 to install flake8
+it test the code and give the error if any python code is not correct
+
+if any error occur in the system then run the following command
+sudo apt --fix-broken install
+
+sudo apt update
+sudo apt install pipx
+pipx ensurepath -> Enable pipx Path
+source ~/.bashrc ->Then restart terminal or run
+
+pipx install flake8
+
+
+go to .git/hooks and create pre-commit 
+
+then write
+
+files = $(git diff --cached --name-only --diff-filter=ACM | grep ".py$")
+flake8 $files
+
+
+then run chmod +x or 777 pre-commit

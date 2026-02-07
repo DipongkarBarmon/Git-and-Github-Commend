@@ -131,5 +131,101 @@ generate passkey from github account settings -> developer settings -> personal 
 
 ****git push -u origin master = push the file to the remote repository
 
-after any change we just use to push code
+after any change we just use to push code and after commit
+
 git push = push the file to the remote repository
+
+
+
+
+git repository can be clone or fork
+
+clone = copy the repository to your local machine
+
+fork = copy the repository to your github account
+
+fork is used to contribute to the open source project
+
+clone is used to copy the repository to your local machine
+
+
+how to use fork  and clone
+
+1. fork the repository
+2. clone the repository to your local machine
+3. make changes to the repository
+4. commit the changes
+5. push the changes to your github account
+6. create a pull request to the original repository
+
+
+fork 
+
+git clone <url> = clone the repository to your local machine
+
+git add . = add all the file to the staging area
+
+git commit -m "message" = commit the file to the local repository
+
+git push = push the file to the remote repository
+
+After that we need to create a pull request to the original repository
+that means get new changes from the original repository to your local repository
+
+git pull = pull the file from the remote repository to the local repository
+
+
+
+# Branch 
+
+
+git branch = to check the branch name
+
+git branch -a = to check the branch name with remote repository
+
+**git branch <branch_name> = create a new branch
+
+*****git checkout <branch_name> = switch to the branch
+
+*****git switch <branch_name> = switch to the branch
+
+
+***git checkout -b <branch_name> = create a new branch and switch to the branch
+
+****git branch -d <branch_name> = delete the branch
+
+**git branch -D <branch_name> = force delete the branch
+
+git branch -m <old-name> <new-name> = rename the branch
+
+
+# log command 
+git log = to check the commit history
+
+git log --oneline = to check the commit history in one line
+
+
+
+git push origin <branch_name> = push the branch to the remote repository
+
+git push --all origin = push all the branch to the remote repository
+
+git push origin --delete <branch_name> = delete the branch from the remote repository
+
+git merge <branch_name> = merge the branch to the current branch
+
+git merge --abort = abort the merge
+
+git merge --continue = continue the merge
+
+git merge --no-ff <branch_name> = merge the branch to the current branch without fast forward
+
+git merge --squash <branch_name> = merge the branch to the current branch with squash
+
+git merge --no-commit <branch_name> = merge the branch to the current branch without commit
+
+git merge --edit <branch_name> = merge the branch to the current branch with edit
+
+git merge --ff-only <branch_name> = merge the branch to the current branch with fast forward only
+
+git

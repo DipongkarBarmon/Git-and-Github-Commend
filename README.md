@@ -104,56 +104,32 @@ git restore <file_name> = recover the file from the staging area
 
 
 
-git log = check the history of the commit
+# to push code local to github 
 
-git diff = check the difference between the file
+****git remote add origin <url> = add the remote repository
 
-git checkout = checkout the file
+if we want to change the remote repository url then we can use the following command
 
-git reset = reset the file
+git remote set-url origin <url> = change the remote repository url
 
-git rm = remove the file
+in local repository branch is master and in remote repository branch is main
 
-git mv = move the file
+then we need to change the branch name from master to main
+using this command ***git branch -M main = change the branch name from master to main
 
-git branch = check the branch
+we can check the branch name using this command ***git branch
 
-git checkout -b = create the branch
+****git push -u origin main = push the file to the remote repository
 
-git merge = merge the branch
+****git remote -v = to check the remote repository url
 
-git remote = check the remote repository
+we also push code without changing branch 
+we need to use passKey to push the code to the remote repository
+generate passkey from github account settings -> developer settings -> personal access tokens -> generate new token -> copy the token
 
+***git remote set-url http://passkey@<url>
+
+****git push -u origin master = push the file to the remote repository
+
+after any change we just use to push code
 git push = push the file to the remote repository
-
-git pull = pull the file from the remote repository
-
-git clone = clone the remote repository
-
-git fetch = fetch the file from the remote repository
-
-git stash = stash the file
-
-git tag = tag the file
-
-git show = show the file
-
-git blame = blame the file
-
-git grep = grep the file
-
-git config = config the file
-
-git help = help the file
-
-git init = initialize empty the git repository
-
-git status = check the status of the file
-
-git add = add the file to the staging area
-
-git commit = commit the file to the local repository
-
-git log = check the history of the commit
-
-git diff =

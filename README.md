@@ -215,7 +215,7 @@ git fetch = fetch the file from the remote repository to the local repository
 
   |-- .git
   |   |-- hooks
-  |   |   |-- pre-commit
+  |   |   |-- pre-commit -> only learn about the hooks
   |   |   |-- commit-msg
   |   |   |-- pre-push
   |   |   |-- post-merge
@@ -288,3 +288,17 @@ flake8 $files
 
 
 then run chmod +x or 777 pre-commit
+
+
+LondheShubham153
+
+
+if reject to push
+git pull origin main 
+git pull origin main --rebase
+git push origin main
+git push origin main --force
+
+
+// vedio last part vary vary important
+Git & GitHub for DevOps | Free Workshop By TrainWithShubham (Hindi)

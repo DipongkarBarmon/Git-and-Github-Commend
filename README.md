@@ -206,26 +206,58 @@ git log --oneline = to check the commit history in one line
 
 
 
-git push origin <branch_name> = push the branch to the remote repository
+git fetch = fetch the file from the remote repository to the local repository
 
-git push --all origin = push all the branch to the remote repository
+***git pull = pull the file from the remote repository to the local repository
 
-git push origin --delete <branch_name> = delete the branch from the remote repository
 
-git merge <branch_name> = merge the branch to the current branch
+# Git Hooks
 
-git merge --abort = abort the merge
+  |-- .git
+  |   |-- hooks
+  |   |   |-- pre-commit
+  |   |   |-- commit-msg
+  |   |   |-- pre-push
+  |   |   |-- post-merge
+  |   |   |-- post-checkout
+  |   |   |-- post-rewrite
+  |   |   |-- pre-rebase
+  |   |   |-- prepare-commit-msg
+  |   |   |-- update
+  |   |   |-- applypatch-msg
+  |   |   |-- pre-applypatch
+  |   |   |-- pre-receive
+  |   |   |-- update
+  |   |   |-- post-receive
+  |   |   |-- post-update
+  |   |   |-- pre-auto-gc
+  |   |   |-- post-rewrite
+  |   |   |-- pre-commit
+  |   |   |-- commit-msg
+  |   |   |-- pre-push
+  |   |   |-- post-merge
+  |   |   |-- post-checkout
+ 
 
-git merge --continue = continue the merge
+-------------------------------------------------------
+ |  untracked     |   stageing       |   tracked      |              
+ |    red text    |    green text    |   white        |
+ ------------------------------------------------------              
+ |                |                  |                |
+ |                |                  |                |
+ |                |                  |                |
+ |                |                  |                |
+ |                |                  |                |
+ |                |                  |                |   
+ |          -> git add . ->     -> git commit         |     
+ |                |                  |                |
+ |                |                  |                |
+-------------------------------------------------------
 
-git merge --no-ff <branch_name> = merge the branch to the current branch without fast forward
 
-git merge --squash <branch_name> = merge the branch to the current branch with squash
 
-git merge --no-commit <branch_name> = merge the branch to the current branch without commit
+# Change in  vs code
+to show .git inside the folder in vs code
 
-git merge --edit <branch_name> = merge the branch to the current branch with edit
-
-git merge --ff-only <branch_name> = merge the branch to the current branch with fast forward only
-
-git
+we need to go to settings and search user.exclude for **/.git and check files:exclude then click on add pattern and add **/.git and click on save
+click x to remove the pattern
